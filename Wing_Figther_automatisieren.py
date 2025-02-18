@@ -8,8 +8,8 @@ import pygetwindow as gw
 from skimage.metrics import structural_similarity as ssim
 
 # Pfade zu den Ordnern
-screenshot_folder = r"D:\VSC\Wing_Figther_automatisieren\Screenshots"
-vergleich_folder = r"D:\VSC\Wing_Figther_automatisieren\Vergleichen"
+screenshot_folder = r"Screenshots"
+vergleich_folder = r"Vergleichen"
 
 # Sicherstellen, dass Screenshot-Ordner existiert
 os.makedirs(screenshot_folder, exist_ok=True)
@@ -284,128 +284,128 @@ def mauszeiger_mittig():
 
 # Alle Button Pfade
 #Bottom Navigationsbar Buttons
-button_Home = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Home_Button.png"
+button_Home = r"Buttons\Home_Button.png"
 #Mail Buttons
-button_Menu = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Menu_Button.png"
-button_Mail = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Mail_Button.png"
-button_Mail_Alles_Lesen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Mail_Alles-lesen_Button.png"
+button_Menu = r"Buttons\Menu_Button.png"
+button_Mail = r"Buttons\Mail_Button.png"
+button_Mail_Alles_Lesen = r"Buttons\Mail_Alles-lesen_Button.png"
 #Immerwiederkommende Buttons
-button_Zuruck = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Zuruck_Button.png"
-button_Sweep = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Tagesevent_Sweep_Button.png"
-button_Fortsetzen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Fortsetzen_Button.png"
-button_Schliessen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Schliessen_Button.png"
+button_Zuruck = r"Buttons\Zuruck_Button.png"
+button_Sweep = r"Buttons\Tagesevent_Sweep_Button.png"
+button_Fortsetzen = r"Buttons\Fortsetzen_Button.png"
+button_Schliessen = r"Buttons\Schliessen_Button.png"
 #Start Buttons
-button_StartZuruck = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Start_Zuruck_Button.png"
-button_StartAbholen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Start_Abholen_Button.png"
-button_StartSchnelleGewinne = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Start_Schnelle-Gewinne_Button.png"
-button_StartKostenlos = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Start_Kostenlos_Button.png"
-button_AbholenKlein = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Start_Abholen-klein_Button.png"
+button_StartZuruck = r"Buttons\Start_Zuruck_Button.png"
+button_StartAbholen = r"Buttons\Start_Abholen_Button.png"
+button_StartSchnelleGewinne = r"Buttons\Start_Schnelle-Gewinne_Button.png"
+button_StartKostenlos = r"Buttons\Start_Kostenlos_Button.png"
+button_AbholenKlein = r"Buttons\Start_Abholen-klein_Button.png"
 #Store Buttons
-button_Store = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Store_Button.png"
-button_StorePaket = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Store_Paket_Button.png"
-button_StorePaketGratis = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Paket_Gratis_Button.png"
+button_Store = r"Buttons\Store_Button.png"
+button_StorePaket = r"Buttons\Store_Paket_Button.png"
+button_StorePaketGratis = r"Buttons\Paket_Gratis_Button.png"
 #Tagesevent Buttons
-button_Tagesevent = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Tagesevent_Button.png"
-button_Tagesevent_Abbrechen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Tagesevent_Abbrechen_Button.png"
-button_Luftseesimulation = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Tagesevent_Luftseesimulation_Button.png"
-button_LuftseesimulationGrad3 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Luftseesimulation_Grad3_Button.png"
-button_LuftseesimulationGrad1 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Luftseesimulation_Grad1_Button.png"
-button_Bombardierung = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Tagesevent_Bombardierung_Button.png"
-button_BombardierungGrad3 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Bombardierung_Grad3_Button.png"
-button_BombardierungGrad1 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Bombardierung_Grad1_Button.png"
-button_StarkeFeindherausforderung = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Tagesevent_Starke-Feindherausforderung_Button.png"
-button_StarkeFeindherausforderungGrad2 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Starke-Feindherausforderung_Grad2_Button.png"
-button_StarkeFeindherausforderungGrad1 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Starke-Feindherausforderung_Grad1_Button.png"
-button_VerlorenesSchlachtfeld = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Tagesevent_Verlorenes-Schlachtfeld_Button.png"
-button_VerlorenesSchlachtfeldGrad4 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Verlorenes-Schlachtfeld_Grade4_Button.png"
-button_VerlorenesSchlachtfeldGrad1 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Verlorenes-Schlachtfeld_Grade1_Button.png"
-button_EntdeckedasWolkenmeer = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Tagesevent_Entdecke-das-Wolkenmeer_Button.png"
-button_EntdeckedasWolkenmeerGrad5 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Entdecke-das-Wolkenmeer_Grade5_Button.png"
-button_EntdeckedasWolkenmeerGrad1 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Entdecke-das-Wolkenmeer_Grade1_Button.png"
-button_TödlicherAngriff = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Tagesevent_Todlicher-Angriff_Button.png"
-button_TödlicherAngriffGrad2 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Todlicher-Angriff_Grade2_Button.png"
-button_TödlicherAngriffGrad1 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Todlicher-Angriff_Grade1_Button.png"
-button_Nachschub = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Tagesevent_Nachschub_Button.png"
-button_NachschubGrad5 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Nachschub_Grad5_Button.png"
-button_NachschubGrad1 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Nachschub_Grad1_Button.png"
+button_Tagesevent = r"Buttons\Tagesevent_Button.png"
+button_Tagesevent_Abbrechen = r"Buttons\Tagesevent_Abbrechen_Button.png"
+button_Luftseesimulation = r"Buttons\Tagesevent_Luftseesimulation_Button.png"
+button_LuftseesimulationGrad3 = r"Buttons\Luftseesimulation_Grad3_Button.png"
+button_LuftseesimulationGrad1 = r"Buttons\Luftseesimulation_Grad1_Button.png"
+button_Bombardierung = r"Buttons\Tagesevent_Bombardierung_Button.png"
+button_BombardierungGrad3 = r"Buttons\Bombardierung_Grad3_Button.png"
+button_BombardierungGrad1 = r"Buttons\Bombardierung_Grad1_Button.png"
+button_StarkeFeindherausforderung = r"Buttons\Tagesevent_Starke-Feindherausforderung_Button.png"
+button_StarkeFeindherausforderungGrad2 = r"Buttons\Starke-Feindherausforderung_Grad2_Button.png"
+button_StarkeFeindherausforderungGrad1 = r"Buttons\Starke-Feindherausforderung_Grad1_Button.png"
+button_VerlorenesSchlachtfeld = r"Buttons\Tagesevent_Verlorenes-Schlachtfeld_Button.png"
+button_VerlorenesSchlachtfeldGrad4 = r"Buttons\Verlorenes-Schlachtfeld_Grade4_Button.png"
+button_VerlorenesSchlachtfeldGrad1 = r"Buttons\Verlorenes-Schlachtfeld_Grade1_Button.png"
+button_EntdeckedasWolkenmeer = r"Buttons\Tagesevent_Entdecke-das-Wolkenmeer_Button.png"
+button_EntdeckedasWolkenmeerGrad5 = r"Buttons\Entdecke-das-Wolkenmeer_Grade5_Button.png"
+button_EntdeckedasWolkenmeerGrad1 = r"Buttons\Entdecke-das-Wolkenmeer_Grade1_Button.png"
+button_TödlicherAngriff = r"Buttons\Tagesevent_Todlicher-Angriff_Button.png"
+button_TödlicherAngriffGrad2 = r"Buttons\Todlicher-Angriff_Grade2_Button.png"
+button_TödlicherAngriffGrad1 = r"Buttons\Todlicher-Angriff_Grade1_Button.png"
+button_Nachschub = r"Buttons\Tagesevent_Nachschub_Button.png"
+button_NachschubGrad5 = r"Buttons\Nachschub_Grad5_Button.png"
+button_NachschubGrad1 = r"Buttons\Nachschub_Grad1_Button.png"
 #Event Buttons
-button_Event = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Event_Button.png"
-button_TitanChallenge = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Event_Titan-Challenge_Button.png"
-button_TitanChallengeChallenge = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Titan-Challenge_Challenge_Button.png"
-button_Sammelzentrum = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Event_Sammelzentrum_Button.png"
-button_Sammelzentrum_Transport = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum_Transport_Button.png"
-button_Sammelzentrum_Bestatigen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum_Bestatigen_Button.png"
-button_EndlosesAbenteuer = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Event_Endloses-Abenteuer_Button.png"
-button_EndlosesAbenteuer_Verbleibend = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Endloses-Abenteuer_Verbleibend_Button.png"
-button_EndlosesAbenteuer_Skip = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Endloses-Abenteuer_Skip_Button.png"
-button_EndlosesAbenteuer_Bestatigen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Endloses-Abenteuer_Bestatigen_Button.png"
-button_Herausforderung = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Event_Herausforderung_Button.png"
-button_Herausforderung_Starten = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Herausforderung_Starten_Button.png"
-button_Entsendung = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Event_Entsendung_Button.png"
-button_EntsendungAbholen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Entsendung_Abholen_Button.png"
-button_Entsendung_Entsenden = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Entsendung_Entsenden_Button.png"
-button_Entsendung_Flugzeug_Hinzufugen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Entsendung_Flugzeug_Hinzufugen_Button.png"
-button_Entsendung_Flugzeug_Wahlen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Entsendung_Flugzeug_Wahlen_Button.png"
-button_Entsendung_Plus = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Entsendung_plus_Button.png"
+button_Event = r"Buttons\Event_Button.png"
+button_TitanChallenge = r"Buttons\Event_Titan-Challenge_Button.png"
+button_TitanChallengeChallenge = r"Buttons\Titan-Challenge_Challenge_Button.png"
+button_Sammelzentrum = r"Buttons\Event_Sammelzentrum_Button.png"
+button_Sammelzentrum_Transport = r"Buttons\Sammelzentrum_Transport_Button.png"
+button_Sammelzentrum_Bestatigen = r"Buttons\Sammelzentrum_Bestatigen_Button.png"
+button_EndlosesAbenteuer = r"Buttons\Event_Endloses-Abenteuer_Button.png"
+button_EndlosesAbenteuer_Verbleibend = r"Buttons\Endloses-Abenteuer_Verbleibend_Button.png"
+button_EndlosesAbenteuer_Skip = r"Buttons\Endloses-Abenteuer_Skip_Button.png"
+button_EndlosesAbenteuer_Bestatigen = r"Buttons\Endloses-Abenteuer_Bestatigen_Button.png"
+button_Herausforderung = r"Buttons\Event_Herausforderung_Button.png"
+button_Herausforderung_Starten = r"Buttons\Herausforderung_Starten_Button.png"
+button_Entsendung = r"Buttons\Event_Entsendung_Button.png"
+button_EntsendungAbholen = r"Buttons\Entsendung_Abholen_Button.png"
+button_Entsendung_Entsenden = r"Buttons\Entsendung_Entsenden_Button.png"
+button_Entsendung_Flugzeug_Hinzufugen = r"Buttons\Entsendung_Flugzeug_Hinzufugen_Button.png"
+button_Entsendung_Flugzeug_Wahlen = r"Buttons\Entsendung_Flugzeug_Wahlen_Button.png"
+button_Entsendung_Plus = r"Buttons\Entsendung_plus_Button.png"
 #Legion Buttons
-button_Legion = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Legion_Button.png"
-button_Legion_Event = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Legion_Event_Button.png"
-button_Legion_Event_Legionsjagd = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Legion_Event_Legionsjagd_Button.png"
-button_Legion_Event_Challenge = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Legion_Event_Challenge_Button.png"
-button_Legion_Angriff_Zuruck = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Legion_Angriff_Zuruck.png"
+button_Legion = r"Buttons\Legion_Button.png"
+button_Legion_Event = r"Buttons\Legion_Event_Button.png"
+button_Legion_Event_Legionsjagd = r"Buttons\Legion_Event_Legionsjagd_Button.png"
+button_Legion_Event_Challenge = r"Buttons\Legion_Event_Challenge_Button.png"
+button_Legion_Angriff_Zuruck = r"Buttons\Legion_Angriff_Zuruck.png"
 #Unico Buttons
-button_Cybertron_Held = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Cybertron-Held_Button.png"
-button_StarCave_Voyage = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Unico_StarCave-Voyage_Button.png"
-button_StarCave_Abholen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Unico_StarCave_Abholen_Button.png"
-button_Unico_Zuruck = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Unico_Zuruck_Button.png"
-button_Unico_Zuruck2 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Unico_Zuruck2_Button.png"
-button_UnicoResist_Unicorn = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Unico_Resist-Unicron_Button.png"
-button_Unico_Chllenge = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Unico_Challenge_Button.png"
-button_Unico_Schiessubung = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Unico_Schiessubung_Button.png"
-button_Unico_Schiessubung_Starten = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Unico_Schiessubung_Starten_Button.png"
-button_Unico_Schiessubung_Starten_Starten = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Unico_Schiessubung_Starten_Starten_Button.png"
-button_Unico_Schiessubung_Bestatigen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Unico_Schiessubung_Bestatigen_Button.png"
-button_Unico_Event_Aufgaben = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Unico_Event_Aufgaben_Button.png"
-button_Unico_Event_Aufgaben_Abholen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Unico_Event_Aufgaben_Abholen_button.png"
+button_Cybertron_Held = r"Buttons\Cybertron-Held_Button.png"
+button_StarCave_Voyage = r"Buttons\Unico_StarCave-Voyage_Button.png"
+button_StarCave_Abholen = r"Buttons\Unico_StarCave_Abholen_Button.png"
+button_Unico_Zuruck = r"Buttons\Unico_Zuruck_Button.png"
+button_Unico_Zuruck2 = r"Buttons\Unico_Zuruck2_Button.png"
+button_UnicoResist_Unicorn = r"Buttons\Unico_Resist-Unicron_Button.png"
+button_Unico_Chllenge = r"Buttons\Unico_Challenge_Button.png"
+button_Unico_Schiessubung = r"Buttons\Unico_Schiessubung_Button.png"
+button_Unico_Schiessubung_Starten = r"Buttons\Unico_Schiessubung_Starten_Button.png"
+button_Unico_Schiessubung_Starten_Starten = r"Buttons\Unico_Schiessubung_Starten_Starten_Button.png"
+button_Unico_Schiessubung_Bestatigen = r"Buttons\Unico_Schiessubung_Bestatigen_Button.png"
+button_Unico_Event_Aufgaben = r"Buttons\Unico_Event_Aufgaben_Button.png"
+button_Unico_Event_Aufgaben_Abholen = r"Buttons\Unico_Event_Aufgaben_Abholen_button.png"
 #Angriff Buttons
-button_Angriff_Hauptkanone = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Angriff_Hauptkanone_Button.png"
-button_Angriff_Hauptkanone_Upgrade = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Angriff_Hauptkanone_Upgrade_Button.png"
-button_Angriff_Rakete = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Angriff_Rakete_Button.png"
-button_Angriff_Rakete_Upgrade = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Angriff_Rakete_Upgrade_Button.png"
-button_Angriff_Nebenkanone = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Angriff_Nebenkanone_Button.png"
-button_Angriff_Bestatigen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Angriff_Bestatigen_Button.png"
-button_Angriff_Starten = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Angriff_Starten_Button.png"
-button_Angriff_Belohnung = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Angriff_Belohnung-Zuruck_Button.png"
+button_Angriff_Hauptkanone = r"Buttons\Angriff_Hauptkanone_Button.png"
+button_Angriff_Hauptkanone_Upgrade = r"Buttons\Angriff_Hauptkanone_Upgrade_Button.png"
+button_Angriff_Rakete = r"Buttons\Angriff_Rakete_Button.png"
+button_Angriff_Rakete_Upgrade = r"Buttons\Angriff_Rakete_Upgrade_Button.png"
+button_Angriff_Nebenkanone = r"Buttons\Angriff_Nebenkanone_Button.png"
+button_Angriff_Bestatigen = r"Buttons\Angriff_Bestatigen_Button.png"
+button_Angriff_Starten = r"Buttons\Angriff_Starten_Button.png"
+button_Angriff_Belohnung = r"Buttons\Angriff_Belohnung-Zuruck_Button.png"
 #Bilder um Flugzeugkordinaten zu finden
-find_cords1 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\find_cords1.png"
-find_cords2 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\find_cords2.png"
+find_cords1 = r"Buttons\find_cords1.png"
+find_cords2 = r"Buttons\find_cords2.png"
 
 # Beispielhafte Template-Dateipfade
 button_Sammelzentrum_templates = [
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Anfangerhandbuch_Level1.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Anfangerhandbuch_Level2.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Anfangerhandbuch_Level3.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Diamant_Level1.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Diamant_Level2.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Diamant_Level3.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\EXPKarte_Level1.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\EXPKarte_Level2.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\EXPKarte_Level3.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Flugzeug_Level1.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Flugzeug_Level2.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Flugzeug_Level3.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Legierung_Level1.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Legierung_Level2.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Legierung_Level2.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Nanomaterialien_Level1.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Nanomaterialien_Level2.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Nanomaterialien_Level3.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Nanomaterialien_Level4.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Sterne_Level1.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Sterne_Level2.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Sterne_Level3.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Zufallsmodul_Level1.png",
-    r"D:\VSC\Wing_Figther_automatisieren\Buttons\Sammelzentrum\Zufallsmodul_Level4.png",
+    r"Buttons\Sammelzentrum\Anfangerhandbuch_Level1.png",
+    r"Buttons\Sammelzentrum\Anfangerhandbuch_Level2.png",
+    r"Buttons\Sammelzentrum\Anfangerhandbuch_Level3.png",
+    r"Buttons\Sammelzentrum\Diamant_Level1.png",
+    r"Buttons\Sammelzentrum\Diamant_Level2.png",
+    r"Buttons\Sammelzentrum\Diamant_Level3.png",
+    r"Buttons\Sammelzentrum\EXPKarte_Level1.png",
+    r"Buttons\Sammelzentrum\EXPKarte_Level2.png",
+    r"Buttons\Sammelzentrum\EXPKarte_Level3.png",
+    r"Buttons\Sammelzentrum\Flugzeug_Level1.png",
+    r"Buttons\Sammelzentrum\Flugzeug_Level2.png",
+    r"Buttons\Sammelzentrum\Flugzeug_Level3.png",
+    r"Buttons\Sammelzentrum\Legierung_Level1.png",
+    r"Buttons\Sammelzentrum\Legierung_Level2.png",
+    r"Buttons\Sammelzentrum\Legierung_Level2.png",
+    r"Buttons\Sammelzentrum\Nanomaterialien_Level1.png",
+    r"Buttons\Sammelzentrum\Nanomaterialien_Level2.png",
+    r"Buttons\Sammelzentrum\Nanomaterialien_Level3.png",
+    r"Buttons\Sammelzentrum\Nanomaterialien_Level4.png",
+    r"Buttons\Sammelzentrum\Sterne_Level1.png",
+    r"Buttons\Sammelzentrum\Sterne_Level2.png",
+    r"Buttons\Sammelzentrum\Sterne_Level3.png",
+    r"Buttons\Sammelzentrum\Zufallsmodul_Level1.png",
+    r"Buttons\Sammelzentrum\Zufallsmodul_Level4.png",
 ]
 
 # Entscheiden, welche Buttons gedrückt werden sollen
