@@ -563,7 +563,7 @@ if sim_start > sim_dont_start:
         time.sleep(2)
 
     # 17. Abbrechen_Button klicken
-    if click_button(button_Fortsetzen):
+    if click_button(button_Tagesevent_Abbrechen):
         print("✅ Abbrechen_Button gedrückt!")
         time.sleep(2)
 
@@ -1530,7 +1530,7 @@ else:
         time.sleep(2)
 
     # 17. Abbrechen_Button klicken
-    if click_button(button_Fortsetzen):
+    if click_button(button_Tagesevent_Abbrechen):
         print("✅ Abbrechen_Button gedrückt!")
         time.sleep(2)
 
@@ -2359,7 +2359,7 @@ else:
         print("✅ Abbrechen_Button gedrückt!")
         time.sleep(2)
 
-    # 18. Schließen-Button noch 1 Mal
+    # 18. Schließen-Button klicken
     if click_button(button_Schliessen):
         print("✅ Start_Schliessen_Button nochmal gedrückt!")
         time.sleep(2)
