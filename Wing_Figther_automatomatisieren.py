@@ -306,6 +306,7 @@ button_StorePaket = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Store_Paket_But
 button_StorePaketGratis = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Paket_Gratis_Button.png"
 #Tagesevent Buttons
 button_Tagesevent = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Tagesevent_Button.png"
+button_Tagesevent_Abbrechen = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Tagesevent_Abbrechen_Button.png"
 button_Luftseesimulation = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Tagesevent_Luftseesimulation_Button.png"
 button_LuftseesimulationGrad3 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Luftseesimulation_Grad3_Button.png"
 button_LuftseesimulationGrad1 = r"D:\VSC\Wing_Figther_automatisieren\Buttons\Luftseesimulation_Grad1_Button.png"
@@ -447,7 +448,7 @@ if sim_start > sim_dont_start:
 
 
 
-    #Store machen
+    #STORE machen
     # Store_Button klicken
     if click_button(button_Store):
         print("✅ Store_Button gedrückt!")
@@ -469,7 +470,7 @@ if sim_start > sim_dont_start:
             print("✅ Belohnung abgeholt!")
             print("✅ Zurück_Button gedrückt!")
             time.sleep(2)
-
+    
 
 
 
@@ -561,15 +562,9 @@ if sim_start > sim_dont_start:
         print("✅ Tagesevent_Sweep_Button gedrückt!")
         time.sleep(2)
 
-    # 17. Fortsetzen_Button 2 Mal klicken
-    for _ in range(2):
-        if click_button(button_Fortsetzen):
-            print("✅ Fortsetzen_Button gedrückt!")
-            time.sleep(2)
-
-    # 18. Schließen-Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Start_Schliessen_Button nochmal gedrückt!")
+    # 17. Abbrechen_Button klicken
+    if click_button(button_Fortsetzen):
+        print("✅ Abbrechen_Button gedrückt!")
         time.sleep(2)
 
     # 15. Bombardierung_Grad1_Button klicken
@@ -580,225 +575,6 @@ if sim_start > sim_dont_start:
     # 19. Zurück-Button drücken
     if click_button(button_Zuruck):
         print("✅ Zurück_Button gedrückt!")
-        time.sleep(2)
-
-
-
-
-    #STARKE-FEINDHERAUSFORDERUNG machen
-    # 20. Tagesevent_Starke-Feindherausforderung_Button klicken
-    if click_button(button_StarkeFeindherausforderung):
-        print("✅ Tagesevent_Starke-Feindherausforderung_Button gedrückt!")
-        time.sleep(2)
-
-    # 21. Starke-Feindherausforderung_Grad2_Button klicken
-    if click_button(button_StarkeFeindherausforderungGrad2):
-        print("✅ Luftseesimulation_Grad3_Button gedrückt!")
-        time.sleep(2)
-
-    # 22. Tagesevent_Sweep_Button klicken
-    if click_button(button_Sweep):
-        print("✅ Tagesevent_Sweep_Button gedrückt!")
-        time.sleep(2)
-
-    # 23. Fortsetzen_Button 2 Mal klicken
-    for _ in range(2):
-        if click_button(button_Fortsetzen):
-            print("✅ Fortsetzen_Button gedrückt!")
-            time.sleep(2)
-
-    # 24. Schließen-Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Schliessen_Button nochmal gedrückt!")
-        time.sleep(2)
-
-    # 21. Starke-Feindherausforderung_Grad1_Button klicken
-    if click_button(button_StarkeFeindherausforderungGrad1):
-        print("✅ Luftseesimulation_Grad1_Button gedrückt!")
-        time.sleep(2)
-
-    # 25. Zurück-Button drücken
-    if click_button(button_Zuruck):
-        print("✅ Zurück_Button gedrückt!")
-        time.sleep(2)
-        scroll_down()
-        time.sleep(2)
-
-
-
-
-    #VERLORENES-SCHLACHTFELD machen
-    # 26. Tagesevent_Verlorenes-Schlachtfeld_Button klicken
-    if click_button(button_VerlorenesSchlachtfeld):
-        print("✅ Tagesevent_Verlorenes-Schlachtfeld_Button gedrückt!")
-        time.sleep(2)
-
-    # 27. Verlorenes-Schlachtfeld_Grade4_Button klicken
-    if click_button(button_VerlorenesSchlachtfeldGrad4):
-        print("✅ Verlorenes-Schlachtfeld_Grade4_Button gedrückt!")
-        time.sleep(2)
-
-    # 28. Tagesevent_Sweep_Button klicken
-    if click_button(button_Sweep):
-        print("✅ Tagesevent_Sweep_Button gedrückt!")
-        time.sleep(2)
-
-    # 41. Fortsetzen_Button 1 Mal klicken, weil ich keine Energie mehr habe
-    if click_button(button_Fortsetzen):
-        print("✅ Fortsetzen_Button gedrückt!")
-        time.sleep(2)
-
-    # 42. Schließen-Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Schliessen_Button nochmal gedrückt!")
-        time.sleep(30152) #hier warten bis ich wieder genug energie habe
-
-    # 40. Tagesevent_Sweep_Button klicken
-    if click_button(button_Sweep):
-        print("✅ Tagesevent_Sweep_Button gedrückt!")
-        time.sleep(2)
-
-    # 41. Fortsetzen_Button 1 Mal klicken, weil ich keine Energie mehr habe
-    if click_button(button_Fortsetzen):
-        print("✅ Fortsetzen_Button gedrückt!")
-        time.sleep(2)
-
-    # 42. Schließen-Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Schliessen_Button nochmal gedrückt!")
-        time.sleep(2)
-
-    # 27. Verlorenes-Schlachtfeld_Grade1_Button klicken
-    if click_button(button_VerlorenesSchlachtfeldGrad1):
-        print("✅ Verlorenes-Schlachtfeld_Grade1_Button gedrückt!")
-        time.sleep(2)
-
-    # 43. Zurück-Button drücken
-    if click_button(button_Zuruck):
-        print("✅ Zurück_Button gedrückt!")
-        time.sleep(2)
-    
-
-
-
-    #ENDECKE-DAS-WOLKENMEER machen
-    # 32. Tagesevent_Entdecke-das-Wolkenmeer_Button klicken
-    if click_button(button_EntdeckedasWolkenmeer):
-        print("✅ Tagesevent_Entdecke-das-Wolkenmeer_Button gedrückt!")
-        time.sleep(2)
-
-    # 33. Entdecke-das-Wolkenmeer_Grade5_Button klicken
-    if click_button(button_EntdeckedasWolkenmeerGrad5):
-        print("✅ Entdecke-das-Wolkenmeer_Grade5_Button gedrückt!")
-        time.sleep(2)
-
-    # 34. Tagesevent_Sweep_Button klicken
-    if click_button(button_Sweep):
-        print("✅ Tagesevent_Sweep_Button gedrückt!")
-        time.sleep(2)
-
-    # 35. Fortsetzen_Button 2 Mal klicken
-    for _ in range(2):
-        if click_button(button_Fortsetzen):
-            print("✅ Fortsetzen_Button gedrückt!")
-            time.sleep(2)
-
-    # 36. Schließen-Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Schliessen_Button nochmal gedrückt!")
-        time.sleep(2)
-
-    # 33. Entdecke-das-Wolkenmeer_Grade1_Button klicken
-    if click_button(button_EntdeckedasWolkenmeerGrad1):
-        print("✅ Entdecke-das-Wolkenmeer_Grade1_Button gedrückt!")
-        time.sleep(2)
-
-    # 37. Zurück-Button drücken
-    if click_button(button_Zuruck):
-        print("✅ Zurück_Button gedrückt!")
-        time.sleep(2)
-
-
-
-
-    #TÖDLICHER ANGRIFF machen
-    # 38. Tagesevent_Tödlicher-Angriff_Button klicken
-    if click_button(button_TödlicherAngriff):
-        print("✅ Tagesevent_Tödlicher-Angriff_Button gedrückt!")
-        time.sleep(2)
-
-    # 39. Todlicher-Angriff_Grade2_Button klicken
-    if click_button(button_TödlicherAngriffGrad2):
-        print("✅ Todlicher-Angriff_Grade2_Button gedrückt!")
-        time.sleep(2)
-
-    # 40. Tagesevent_Sweep_Button klicken
-    if click_button(button_Sweep):
-        print("✅ Tagesevent_Sweep_Button gedrückt!")
-        time.sleep(2)
-
-    # 35. Fortsetzen_Button 2 Mal klicken
-    for _ in range(2):
-        if click_button(button_Fortsetzen):
-            print("✅ Fortsetzen_Button gedrückt!")
-            time.sleep(2)
-
-    # 36. Schließen-Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Schliessen_Button nochmal gedrückt!")
-        time.sleep(2)
-
-    # 39. Todlicher-Angriff_Grade1_Button klicken
-    if click_button(button_TödlicherAngriffGrad1):
-        print("✅ Todlicher-Angriff_Grade1_Button gedrückt!")
-        time.sleep(2)
-
-    # 37. Zurück-Button drücken
-    if click_button(button_Zuruck):
-        print("✅ Zurück_Button gedrückt!")
-        time.sleep(2)
-    
-
-
-
-    #NACHSCHUB machen
-    # 44. Tagesevent_Nachschub_Button klicken
-    if click_button(button_Nachschub):
-        print("✅ Tagesevent_Nachschub_Button gedrückt!")
-        time.sleep(2)
-
-    # 45. Nachschub_Grad5_Button klicken
-    if click_button(button_NachschubGrad5):
-        print("✅ Nachschub_Grad5_Button gedrückt!")
-        time.sleep(2)
-
-    # 46. Tagesevent_Sweep_Button klicken
-    if click_button(button_Sweep):
-        print("✅ Tagesevent_Sweep_Button gedrückt!")
-        time.sleep(2)
-
-    # 47. Fortsetzen_Button 2 Mal klicken
-    for _ in range(2):
-        if click_button(button_Fortsetzen):
-            print("✅ Fortsetzen_Button gedrückt!")
-            time.sleep(2)
-
-    # 48. Schließen_Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Schliessen_Button nochmal gedrückt!")
-        time.sleep(2)
-
-    # 45. Nachschub_Grad1_Button klicken
-    if click_button(button_NachschubGrad1):
-        print("✅ Nachschub_Grad1_Button gedrückt!")
-        time.sleep(2)
-
-    # 49. Zurück_Button drücken
-    if click_button(button_Zuruck):
-        print("✅ Zurück_Button gedrückt!")
-        time.sleep(2)
-        mauszeiger_mittig()
-        scroll_up()
         time.sleep(2)
 
     # 49. Zurück_Button drücken um zum Home zu kommen
@@ -883,7 +659,7 @@ if sim_start > sim_dont_start:
     #HIER NOCH MIT DER ANDEREN SCREENSHOT FUNKTION AUSPROBIEREN (Sammelzentrum_nichtfindbare buttons testen und sie finden lassen.py)!!!!!!!!!!!!!!!!!!!
     #SAMMELZENTRUM machen
     # 62. Sammelzentrum_Button drücken
-    if click_button(button_Sammelzentrum):
+    '''if click_button(button_Sammelzentrum):
         print("✅ Sammelzentrum_Button gedrückt!")
         time.sleep(2)
 
@@ -933,7 +709,7 @@ if sim_start > sim_dont_start:
     # Zurück-Button drücken
     if click_button(button_Zuruck):
         print("✅ Zurück_Button gedrückt!")
-        time.sleep(2)
+        time.sleep(2)'''
 
 
 
@@ -1075,7 +851,7 @@ if sim_start > sim_dont_start:
     if click_top_button(button_EntsendungAbholen, clicks=10):
         print("✅ EntsendungAbholen_Button 5-mal gedrückt!")
 
-    # 49. Zurück-Button drücken
+    # 49. Zurück_Button drücken
     if click_button(button_Zuruck):
         print("✅ Zurück_Button gedrückt!")
         time.sleep(2)
@@ -1083,7 +859,7 @@ if sim_start > sim_dont_start:
         scroll_up()
         time.sleep(2)
 
-    # 49. Zurück-Button drücken um zum Home zu kommen
+    # 49. Zurück_Button drücken um zum Home zu kommen
     if click_button(button_Zuruck):
         print("✅ Zurück_Button gedrückt!")
         time.sleep(2)
@@ -1312,9 +1088,328 @@ if sim_start > sim_dont_start:
         print("✅ Zurück_Button gedrückt!")
         time.sleep(2)
 
-    # 66. Zurück2_Button drücken
+    # 66. Zurück2_Button drücken um zum Home zu kommen
     if click_button(button_Unico_Zuruck2):
         print("✅ Zurück2_Button gedrückt!")
+        time.sleep(2)
+
+
+
+
+    #ENERGIE AUFLADEN
+    time.sleep(30152) #hier warten bis ich wieder genug energie habe (50)
+    #Prüfen ob Schliessen Button da sind und ob Start Zurück Button da sind
+    # 65. Schliessen_Button drücken
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button gedrückt!")
+        time.sleep(2)
+
+    # 65. Schliessen_Button drücken
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button gedrückt!")
+        time.sleep(2)
+
+    # 65. Schliessen_Button drücken
+    if click_button(button_StartZuruck):
+        print("✅ Schliessen_Button gedrückt!")
+        time.sleep(2)
+
+    # 7. Tagesevent_Button klicken
+    if click_button(button_Tagesevent):
+        print("✅ Tagesevent_Button gedrückt!")
+        time.sleep(2)
+
+
+
+
+    #STARKE-FEINDHERAUSFORDERUNG machen
+    # 20. Tagesevent_Starke-Feindherausforderung_Button klicken
+    if click_button(button_StarkeFeindherausforderung):
+        print("✅ Tagesevent_Starke-Feindherausforderung_Button gedrückt!")
+        time.sleep(2)
+
+    # 21. Starke-Feindherausforderung_Grad2_Button klicken
+    if click_button(button_StarkeFeindherausforderungGrad2):
+        print("✅ Luftseesimulation_Grad3_Button gedrückt!")
+        time.sleep(2)
+
+    # 22. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 23. Fortsetzen_Button 2 Mal klicken
+    for _ in range(2):
+        if click_button(button_Fortsetzen):
+            print("✅ Fortsetzen_Button gedrückt!")
+            time.sleep(2)
+
+    # 24. Schließen-Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button nochmal gedrückt!")
+        time.sleep(2)
+
+    # 21. Starke-Feindherausforderung_Grad1_Button klicken
+    if click_button(button_StarkeFeindherausforderungGrad1):
+        print("✅ Luftseesimulation_Grad1_Button gedrückt!")
+        time.sleep(2)
+
+    # 25. Zurück-Button drücken
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+
+
+
+
+    #NACHSCHUB machen
+    # 44. Tagesevent_Nachschub_Button klicken
+    if click_button(button_Nachschub):
+        print("✅ Tagesevent_Nachschub_Button gedrückt!")
+        time.sleep(2)
+
+    # 45. Nachschub_Grad5_Button klicken
+    if click_button(button_NachschubGrad5):
+        print("✅ Nachschub_Grad5_Button gedrückt!")
+        time.sleep(2)
+
+    # 46. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 47. Fortsetzen_Button 2 Mal klicken
+    for _ in range(2):
+        if click_button(button_Fortsetzen):
+            print("✅ Fortsetzen_Button gedrückt!")
+            time.sleep(2)
+
+    # 48. Schließen_Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button nochmal gedrückt!")
+        time.sleep(2)
+
+    # 45. Nachschub_Grad1_Button klicken
+    if click_button(button_NachschubGrad1):
+        print("✅ Nachschub_Grad1_Button gedrückt!")
+        time.sleep(2)
+
+    # 49. Zurück_Button drücken
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+        mauszeiger_mittig()
+        scroll_down()
+        time.sleep(2)
+
+
+
+
+    #VERLORENES-SCHLACHTFELD machen
+    # 26. Tagesevent_Verlorenes-Schlachtfeld_Button klicken
+    if click_button(button_VerlorenesSchlachtfeld):
+        print("✅ Tagesevent_Verlorenes-Schlachtfeld_Button gedrückt!")
+        time.sleep(2)
+
+    # 27. Verlorenes-Schlachtfeld_Grade4_Button klicken
+    if click_button(button_VerlorenesSchlachtfeldGrad4):
+        print("✅ Verlorenes-Schlachtfeld_Grade4_Button gedrückt!")
+        time.sleep(2)
+
+    # 28. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 41. Fortsetzen_Button 1 Mal klicken, weil ich keine Energie mehr habe
+    if click_button(button_Fortsetzen):
+        print("✅ Fortsetzen_Button gedrückt!")
+        time.sleep(2)
+
+    # 42. Schließen-Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button nochmal gedrückt!")
+        time.sleep(30152) #hier warten bis ich wieder genug energie habe
+
+    # 40. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 41. Fortsetzen_Button 1 Mal klicken, weil ich keine Energie mehr habe
+    if click_button(button_Fortsetzen):
+        print("✅ Fortsetzen_Button gedrückt!")
+        time.sleep(2)
+
+    # 42. Schließen-Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button nochmal gedrückt!")
+        time.sleep(2)
+
+    # 27. Verlorenes-Schlachtfeld_Grade1_Button klicken
+    if click_button(button_VerlorenesSchlachtfeldGrad1):
+        print("✅ Verlorenes-Schlachtfeld_Grade1_Button gedrückt!")
+        time.sleep(2)
+
+    # 43. Zurück-Button drücken
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+    
+
+
+
+    #ENDECKE-DAS-WOLKENMEER machen
+    # 32. Tagesevent_Entdecke-das-Wolkenmeer_Button klicken
+    if click_button(button_EntdeckedasWolkenmeer):
+        print("✅ Tagesevent_Entdecke-das-Wolkenmeer_Button gedrückt!")
+        time.sleep(2)
+
+    # 33. Entdecke-das-Wolkenmeer_Grade5_Button klicken
+    if click_button(button_EntdeckedasWolkenmeerGrad5):
+        print("✅ Entdecke-das-Wolkenmeer_Grade5_Button gedrückt!")
+        time.sleep(2)
+
+    # 34. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 35. Fortsetzen_Button 2 Mal klicken
+    for _ in range(2):
+        if click_button(button_Fortsetzen):
+            print("✅ Fortsetzen_Button gedrückt!")
+            time.sleep(2)
+
+    # 36. Schließen-Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button nochmal gedrückt!")
+        time.sleep(2)
+
+    # 33. Entdecke-das-Wolkenmeer_Grade1_Button klicken
+    if click_button(button_EntdeckedasWolkenmeerGrad1):
+        print("✅ Entdecke-das-Wolkenmeer_Grade1_Button gedrückt!")
+        time.sleep(2)
+
+    # 37. Zurück-Button drücken
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+
+
+
+
+    #TÖDLICHER ANGRIFF machen
+    # 38. Tagesevent_Tödlicher-Angriff_Button klicken
+    if click_button(button_TödlicherAngriff):
+        print("✅ Tagesevent_Tödlicher-Angriff_Button gedrückt!")
+        time.sleep(2)
+
+    # 39. Todlicher-Angriff_Grade2_Button klicken
+    if click_button(button_TödlicherAngriffGrad2):
+        print("✅ Todlicher-Angriff_Grade2_Button gedrückt!")
+        time.sleep(2)
+
+    # 40. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 35. Fortsetzen_Button 2 Mal klicken
+    for _ in range(2):
+        if click_button(button_Fortsetzen):
+            print("✅ Fortsetzen_Button gedrückt!")
+            time.sleep(2)
+
+    # 36. Schließen-Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button nochmal gedrückt!")
+        time.sleep(2)
+
+    # 39. Todlicher-Angriff_Grade1_Button klicken
+    if click_button(button_TödlicherAngriffGrad1):
+        print("✅ Todlicher-Angriff_Grade1_Button gedrückt!")
+        time.sleep(2)
+
+    # 37. Zurück-Button drücken
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+        mauszeiger_mittig()
+        scroll_up()
+        time.sleep(2)
+
+    # 49. Zurück_Button drücken um zum Home zu kommen
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+
+
+
+    time.sleep(3020) #hier warten bis ich wieder genug energie habe (5)
+    #Prüfen ob Schliessen Button da sind und ob Start Zurück Button da sind
+    # 65. Schliessen_Button drücken
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button gedrückt!")
+        time.sleep(2)
+
+    # 65. Schliessen_Button drücken
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button gedrückt!")
+        time.sleep(2)
+
+    # 65. Schliessen_Button drücken
+    if click_button(button_StartZuruck):
+        print("✅ Schliessen_Button gedrückt!")
+        time.sleep(2)
+
+    # 7. Tagesevent_Button klicken
+    if click_button(button_Tagesevent):
+        print("✅ Tagesevent_Button gedrückt!")
+        time.sleep(2)
+    
+
+
+    
+    #BOMBARDIERUNG machen
+    # 14. Tagesevent_Bombardierung_Button klicken
+    if click_button(button_Bombardierung):
+        print("✅ Tagesevent_Bombardierung_Button gedrückt!")
+        time.sleep(2)
+
+    # 15. Bombardierung_Grad3_Button klicken
+    if click_button(button_BombardierungGrad3):
+        print("✅ Luftseesimulation_Grad3_Button gedrückt!")
+        time.sleep(2)
+
+    # 16. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 17. Abbrechen_Button klicken
+    if click_button(button_Tagesevent_Abbrechen):
+        print("✅ Abbrechen_Button gedrückt!")
+        time.sleep(2)
+
+    # 18. Schließen-Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Start_Schliessen_Button nochmal gedrückt!")
+        time.sleep(2)
+
+    # 15. Bombardierung_Grad1_Button klicken
+    if click_button(button_BombardierungGrad1):
+        print("✅ Luftseesimulation_Grad1_Button gedrückt!")
+        time.sleep(2)
+
+    # 19. Zurück-Button drücken
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+
+    # 49. Zurück_Button drücken um zum Home zu kommen
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
         time.sleep(2)
 
 else:
@@ -1434,15 +1529,9 @@ else:
         print("✅ Tagesevent_Sweep_Button gedrückt!")
         time.sleep(2)
 
-    # 17. Fortsetzen_Button 2 Mal klicken
-    for _ in range(2):
-        if click_button(button_Fortsetzen):
-            print("✅ Fortsetzen_Button gedrückt!")
-            time.sleep(2)
-
-    # 18. Schließen-Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Start_Schliessen_Button nochmal gedrückt!")
+    # 17. Abbrechen_Button klicken
+    if click_button(button_Fortsetzen):
+        print("✅ Abbrechen_Button gedrückt!")
         time.sleep(2)
 
     # 15. Bombardierung_Grad1_Button klicken
@@ -1455,231 +1544,10 @@ else:
         print("✅ Zurück_Button gedrückt!")
         time.sleep(2)
 
-
-
-
-    #STARKE-FEINDHERAUSFORDERUNG machen
-    # 20. Tagesevent_Starke-Feindherausforderung_Button klicken
-    if click_button(button_StarkeFeindherausforderung):
-        print("✅ Tagesevent_Starke-Feindherausforderung_Button gedrückt!")
-        time.sleep(2)
-
-    # 21. Starke-Feindherausforderung_Grad2_Button klicken
-    if click_button(button_StarkeFeindherausforderungGrad2):
-        print("✅ Luftseesimulation_Grad3_Button gedrückt!")
-        time.sleep(2)
-
-    # 22. Tagesevent_Sweep_Button klicken
-    if click_button(button_Sweep):
-        print("✅ Tagesevent_Sweep_Button gedrückt!")
-        time.sleep(2)
-
-    # 23. Fortsetzen_Button 2 Mal klicken
-    for _ in range(2):
-        if click_button(button_Fortsetzen):
-            print("✅ Fortsetzen_Button gedrückt!")
-            time.sleep(2)
-
-    # 24. Schließen-Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Schliessen_Button nochmal gedrückt!")
-        time.sleep(2)
-
-    # 21. Starke-Feindherausforderung_Grad1_Button klicken
-    if click_button(button_StarkeFeindherausforderungGrad1):
-        print("✅ Luftseesimulation_Grad1_Button gedrückt!")
-        time.sleep(2)
-
-    # 25. Zurück-Button drücken
-    if click_button(button_Zuruck):
-        print("✅ Zurück_Button gedrückt!")
-        time.sleep(2)
-        mauszeiger_mittig()
-        scroll_down()
-        time.sleep(2)
-
-
-
-
-    #VERLORENES-SCHLACHTFELD machen
-    # 26. Tagesevent_Verlorenes-Schlachtfeld_Button klicken
-    if click_button(button_VerlorenesSchlachtfeld):
-        print("✅ Tagesevent_Verlorenes-Schlachtfeld_Button gedrückt!")
-        time.sleep(2)
-
-    # 27. Verlorenes-Schlachtfeld_Grade4_Button klicken
-    if click_button(button_VerlorenesSchlachtfeldGrad4):
-        print("✅ Verlorenes-Schlachtfeld_Grade4_Button gedrückt!")
-        time.sleep(2)
-
-    # 28. Tagesevent_Sweep_Button klicken
-    if click_button(button_Sweep):
-        print("✅ Tagesevent_Sweep_Button gedrückt!")
-        time.sleep(2)
-
-    # 41. Fortsetzen_Button 1 Mal klicken, weil ich keine Energie mehr habe
-    if click_button(button_Fortsetzen):
-        print("✅ Fortsetzen_Button gedrückt!")
-        time.sleep(2)
-
-    # 42. Schließen-Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Schliessen_Button nochmal gedrückt!")
-        time.sleep(30152) #hier warten bis ich wieder genug energie habe
-
-    # 40. Tagesevent_Sweep_Button klicken
-    if click_button(button_Sweep):
-        print("✅ Tagesevent_Sweep_Button gedrückt!")
-        time.sleep(2)
-
-    # 41. Fortsetzen_Button 1 Mal klicken, weil ich keine Energie mehr habe
-    if click_button(button_Fortsetzen):
-        print("✅ Fortsetzen_Button gedrückt!")
-        time.sleep(2)
-
-    # 42. Schließen-Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Schliessen_Button nochmal gedrückt!")
-        time.sleep(2)
-
-    # 27. Verlorenes-Schlachtfeld_Grade1_Button klicken
-    if click_button(button_VerlorenesSchlachtfeldGrad1):
-        print("✅ Verlorenes-Schlachtfeld_Grade1_Button gedrückt!")
-        time.sleep(2)
-
-    # 43. Zurück-Button drücken
-    if click_button(button_Zuruck):
-        print("✅ Zurück_Button gedrückt!")
-        time.sleep(2)
-    
-
-
-
-    #ENDECKE-DAS-WOLKENMEER machen
-    # 32. Tagesevent_Entdecke-das-Wolkenmeer_Button klicken
-    if click_button(button_EntdeckedasWolkenmeer):
-        print("✅ Tagesevent_Entdecke-das-Wolkenmeer_Button gedrückt!")
-        time.sleep(2)
-
-    # 33. Entdecke-das-Wolkenmeer_Grade5_Button klicken
-    if click_button(button_EntdeckedasWolkenmeerGrad5):
-        print("✅ Entdecke-das-Wolkenmeer_Grade5_Button gedrückt!")
-        time.sleep(2)
-
-    # 34. Tagesevent_Sweep_Button klicken
-    if click_button(button_Sweep):
-        print("✅ Tagesevent_Sweep_Button gedrückt!")
-        time.sleep(2)
-
-    # 35. Fortsetzen_Button 2 Mal klicken
-    for _ in range(2):
-        if click_button(button_Fortsetzen):
-            print("✅ Fortsetzen_Button gedrückt!")
-            time.sleep(2)
-
-    # 36. Schließen-Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Schliessen_Button nochmal gedrückt!")
-        time.sleep(2)
-
-    # 33. Entdecke-das-Wolkenmeer_Grade1_Button klicken
-    if click_button(button_EntdeckedasWolkenmeerGrad1):
-        print("✅ Entdecke-das-Wolkenmeer_Grade1_Button gedrückt!")
-        time.sleep(2)
-
-    # 37. Zurück-Button drücken
-    if click_button(button_Zuruck):
-        print("✅ Zurück_Button gedrückt!")
-        time.sleep(2)
-
-
-
-
-    #TÖDLICHER ANGRIFF machen
-    # 38. Tagesevent_Tödlicher-Angriff_Button klicken
-    if click_button(button_TödlicherAngriff):
-        print("✅ Tagesevent_Tödlicher-Angriff_Button gedrückt!")
-        time.sleep(2)
-
-    # 39. Todlicher-Angriff_Grade2_Button klicken
-    if click_button(button_TödlicherAngriffGrad2):
-        print("✅ Todlicher-Angriff_Grade2_Button gedrückt!")
-        time.sleep(2)
-
-    # 40. Tagesevent_Sweep_Button klicken
-    if click_button(button_Sweep):
-        print("✅ Tagesevent_Sweep_Button gedrückt!")
-        time.sleep(2)
-
-    # 35. Fortsetzen_Button 2 Mal klicken
-    for _ in range(2):
-        if click_button(button_Fortsetzen):
-            print("✅ Fortsetzen_Button gedrückt!")
-            time.sleep(2)
-
-    # 36. Schließen-Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Schliessen_Button nochmal gedrückt!")
-        time.sleep(2)
-
-    # 39. Todlicher-Angriff_Grade1_Button klicken
-    if click_button(button_TödlicherAngriffGrad1):
-        print("✅ Todlicher-Angriff_Grade1_Button gedrückt!")
-        time.sleep(2)
-
-    # 37. Zurück-Button drücken
-    if click_button(button_Zuruck):
-        print("✅ Zurück_Button gedrückt!")
-        time.sleep(2)
-    
-
-
-
-    #NACHSCHUB machen
-    # 44. Tagesevent_Nachschub_Button klicken
-    if click_button(button_Nachschub):
-        print("✅ Tagesevent_Nachschub_Button gedrückt!")
-        time.sleep(2)
-
-    # 45. Nachschub_Grad5_Button klicken
-    if click_button(button_NachschubGrad5):
-        print("✅ Nachschub_Grad5_Button gedrückt!")
-        time.sleep(2)
-
-    # 46. Tagesevent_Sweep_Button klicken
-    if click_button(button_Sweep):
-        print("✅ Tagesevent_Sweep_Button gedrückt!")
-        time.sleep(2)
-
-    # 47. Fortsetzen_Button 2 Mal klicken
-    for _ in range(2):
-        if click_button(button_Fortsetzen):
-            print("✅ Fortsetzen_Button gedrückt!")
-            time.sleep(2)
-
-    # 48. Schließen_Button noch 1 Mal
-    if click_button(button_Schliessen):
-        print("✅ Schliessen_Button nochmal gedrückt!")
-        time.sleep(2)
-
-    # 45. Nachschub_Grad1_Button klicken
-    if click_button(button_NachschubGrad1):
-        print("✅ Nachschub_Grad1_Button gedrückt!")
-        time.sleep(2)
-
-    # 49. Zurück_Button drücken
-    if click_button(button_Zuruck):
-        print("✅ Zurück_Button gedrückt!")
-        time.sleep(2)
-        mauszeiger_mittig()
-        scroll_up()
-        time.sleep(2)
-
     # 49. Zurück_Button drücken um zum Home zu kommen
     if click_button(button_Zuruck):
         print("✅ Zurück_Button gedrückt!")
         time.sleep(2)
-        
 
 
 
@@ -1758,7 +1626,7 @@ else:
     #HIER NOCH MIT DER ANDEREN SCREENSHOT FUNKTION AUSPROBIEREN (Sammelzentrum_nichtfindbare buttons testen und sie finden lassen.py)!!!!!!!!!!!!!!!!!!!
     #SAMMELZENTRUM machen
     # 62. Sammelzentrum_Button drücken
-    if click_button(button_Sammelzentrum):
+    '''if click_button(button_Sammelzentrum):
         print("✅ Sammelzentrum_Button gedrückt!")
         time.sleep(2)
 
@@ -1808,7 +1676,7 @@ else:
     # Zurück-Button drücken
     if click_button(button_Zuruck):
         print("✅ Zurück_Button gedrückt!")
-        time.sleep(2)
+        time.sleep(2)'''
 
 
 
@@ -2187,7 +2055,326 @@ else:
         print("✅ Zurück_Button gedrückt!")
         time.sleep(2)
 
-    # 66. Zurück2_Button drücken
+    # 66. Zurück2_Button drücken um zum Home zu kommen
     if click_button(button_Unico_Zuruck2):
         print("✅ Zurück2_Button gedrückt!")
+        time.sleep(2)
+
+
+
+
+    #ENERGIE AUFLADEN
+    time.sleep(30152) #hier warten bis ich wieder genug energie habe (50)
+    #Prüfen ob Schliessen Button da sind und ob Start Zurück Button da sind
+    # 65. Schliessen_Button drücken
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button gedrückt!")
+        time.sleep(2)
+
+    # 65. Schliessen_Button drücken
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button gedrückt!")
+        time.sleep(2)
+
+    # 65. Schliessen_Button drücken
+    if click_button(button_StartZuruck):
+        print("✅ Schliessen_Button gedrückt!")
+        time.sleep(2)
+
+    # 7. Tagesevent_Button klicken
+    if click_button(button_Tagesevent):
+        print("✅ Tagesevent_Button gedrückt!")
+        time.sleep(2)
+
+
+
+
+    #STARKE-FEINDHERAUSFORDERUNG machen
+    # 20. Tagesevent_Starke-Feindherausforderung_Button klicken
+    if click_button(button_StarkeFeindherausforderung):
+        print("✅ Tagesevent_Starke-Feindherausforderung_Button gedrückt!")
+        time.sleep(2)
+
+    # 21. Starke-Feindherausforderung_Grad2_Button klicken
+    if click_button(button_StarkeFeindherausforderungGrad2):
+        print("✅ Luftseesimulation_Grad3_Button gedrückt!")
+        time.sleep(2)
+
+    # 22. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 23. Fortsetzen_Button 2 Mal klicken
+    for _ in range(2):
+        if click_button(button_Fortsetzen):
+            print("✅ Fortsetzen_Button gedrückt!")
+            time.sleep(2)
+
+    # 24. Schließen-Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button nochmal gedrückt!")
+        time.sleep(2)
+
+    # 21. Starke-Feindherausforderung_Grad1_Button klicken
+    if click_button(button_StarkeFeindherausforderungGrad1):
+        print("✅ Luftseesimulation_Grad1_Button gedrückt!")
+        time.sleep(2)
+
+    # 25. Zurück-Button drücken
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+
+
+
+
+    #NACHSCHUB machen
+    # 44. Tagesevent_Nachschub_Button klicken
+    if click_button(button_Nachschub):
+        print("✅ Tagesevent_Nachschub_Button gedrückt!")
+        time.sleep(2)
+
+    # 45. Nachschub_Grad5_Button klicken
+    if click_button(button_NachschubGrad5):
+        print("✅ Nachschub_Grad5_Button gedrückt!")
+        time.sleep(2)
+
+    # 46. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 47. Fortsetzen_Button 2 Mal klicken
+    for _ in range(2):
+        if click_button(button_Fortsetzen):
+            print("✅ Fortsetzen_Button gedrückt!")
+            time.sleep(2)
+
+    # 48. Schließen_Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button nochmal gedrückt!")
+        time.sleep(2)
+
+    # 45. Nachschub_Grad1_Button klicken
+    if click_button(button_NachschubGrad1):
+        print("✅ Nachschub_Grad1_Button gedrückt!")
+        time.sleep(2)
+
+    # 49. Zurück_Button drücken
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+        mauszeiger_mittig()
+        scroll_down()
+        time.sleep(2)
+
+
+
+
+    #VERLORENES-SCHLACHTFELD machen
+    # 26. Tagesevent_Verlorenes-Schlachtfeld_Button klicken
+    if click_button(button_VerlorenesSchlachtfeld):
+        print("✅ Tagesevent_Verlorenes-Schlachtfeld_Button gedrückt!")
+        time.sleep(2)
+
+    # 27. Verlorenes-Schlachtfeld_Grade4_Button klicken
+    if click_button(button_VerlorenesSchlachtfeldGrad4):
+        print("✅ Verlorenes-Schlachtfeld_Grade4_Button gedrückt!")
+        time.sleep(2)
+
+    # 28. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 41. Fortsetzen_Button 1 Mal klicken, weil ich keine Energie mehr habe
+    if click_button(button_Fortsetzen):
+        print("✅ Fortsetzen_Button gedrückt!")
+        time.sleep(2)
+
+    # 42. Schließen-Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button nochmal gedrückt!")
+        time.sleep(30152) #hier warten bis ich wieder genug energie habe
+
+    # 40. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 41. Fortsetzen_Button 1 Mal klicken, weil ich keine Energie mehr habe
+    if click_button(button_Fortsetzen):
+        print("✅ Fortsetzen_Button gedrückt!")
+        time.sleep(2)
+
+    # 42. Schließen-Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button nochmal gedrückt!")
+        time.sleep(2)
+
+    # 27. Verlorenes-Schlachtfeld_Grade1_Button klicken
+    if click_button(button_VerlorenesSchlachtfeldGrad1):
+        print("✅ Verlorenes-Schlachtfeld_Grade1_Button gedrückt!")
+        time.sleep(2)
+
+    # 43. Zurück-Button drücken
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+    
+
+
+
+    #ENDECKE-DAS-WOLKENMEER machen
+    # 32. Tagesevent_Entdecke-das-Wolkenmeer_Button klicken
+    if click_button(button_EntdeckedasWolkenmeer):
+        print("✅ Tagesevent_Entdecke-das-Wolkenmeer_Button gedrückt!")
+        time.sleep(2)
+
+    # 33. Entdecke-das-Wolkenmeer_Grade5_Button klicken
+    if click_button(button_EntdeckedasWolkenmeerGrad5):
+        print("✅ Entdecke-das-Wolkenmeer_Grade5_Button gedrückt!")
+        time.sleep(2)
+
+    # 34. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 35. Fortsetzen_Button 2 Mal klicken
+    for _ in range(2):
+        if click_button(button_Fortsetzen):
+            print("✅ Fortsetzen_Button gedrückt!")
+            time.sleep(2)
+
+    # 36. Schließen-Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button nochmal gedrückt!")
+        time.sleep(2)
+
+    # 33. Entdecke-das-Wolkenmeer_Grade1_Button klicken
+    if click_button(button_EntdeckedasWolkenmeerGrad1):
+        print("✅ Entdecke-das-Wolkenmeer_Grade1_Button gedrückt!")
+        time.sleep(2)
+
+    # 37. Zurück-Button drücken
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+
+
+
+
+    #TÖDLICHER ANGRIFF machen
+    # 38. Tagesevent_Tödlicher-Angriff_Button klicken
+    if click_button(button_TödlicherAngriff):
+        print("✅ Tagesevent_Tödlicher-Angriff_Button gedrückt!")
+        time.sleep(2)
+
+    # 39. Todlicher-Angriff_Grade2_Button klicken
+    if click_button(button_TödlicherAngriffGrad2):
+        print("✅ Todlicher-Angriff_Grade2_Button gedrückt!")
+        time.sleep(2)
+
+    # 40. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 35. Fortsetzen_Button 2 Mal klicken
+    for _ in range(2):
+        if click_button(button_Fortsetzen):
+            print("✅ Fortsetzen_Button gedrückt!")
+            time.sleep(2)
+
+    # 36. Schließen-Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button nochmal gedrückt!")
+        time.sleep(2)
+
+    # 39. Todlicher-Angriff_Grade1_Button klicken
+    if click_button(button_TödlicherAngriffGrad1):
+        print("✅ Todlicher-Angriff_Grade1_Button gedrückt!")
+        time.sleep(2)
+
+    # 37. Zurück-Button drücken
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+        mauszeiger_mittig()
+        scroll_up()
+        time.sleep(2)
+
+    # 49. Zurück_Button drücken um zum Home zu kommen
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+
+
+
+    time.sleep(3020) #hier warten bis ich wieder genug energie habe (5)
+    #Prüfen ob Schliessen Button da sind und ob Start Zurück Button da sind
+    # 65. Schliessen_Button drücken
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button gedrückt!")
+        time.sleep(2)
+
+    # 65. Schliessen_Button drücken
+    if click_button(button_Schliessen):
+        print("✅ Schliessen_Button gedrückt!")
+        time.sleep(2)
+
+    # 65. Schliessen_Button drücken
+    if click_button(button_StartZuruck):
+        print("✅ Schliessen_Button gedrückt!")
+        time.sleep(2)
+
+    # 7. Tagesevent_Button klicken
+    if click_button(button_Tagesevent):
+        print("✅ Tagesevent_Button gedrückt!")
+        time.sleep(2)
+    
+
+
+    
+    #BOMBARDIERUNG machen
+    # 14. Tagesevent_Bombardierung_Button klicken
+    if click_button(button_Bombardierung):
+        print("✅ Tagesevent_Bombardierung_Button gedrückt!")
+        time.sleep(2)
+
+    # 15. Bombardierung_Grad3_Button klicken
+    if click_button(button_BombardierungGrad3):
+        print("✅ Luftseesimulation_Grad3_Button gedrückt!")
+        time.sleep(2)
+
+    # 16. Tagesevent_Sweep_Button klicken
+    if click_button(button_Sweep):
+        print("✅ Tagesevent_Sweep_Button gedrückt!")
+        time.sleep(2)
+
+    # 17. Abbrechen_Button klicken
+    if click_button(button_Tagesevent_Abbrechen):
+        print("✅ Abbrechen_Button gedrückt!")
+        time.sleep(2)
+
+    # 18. Schließen-Button noch 1 Mal
+    if click_button(button_Schliessen):
+        print("✅ Start_Schliessen_Button nochmal gedrückt!")
+        time.sleep(2)
+
+    # 15. Bombardierung_Grad1_Button klicken
+    if click_button(button_BombardierungGrad1):
+        print("✅ Luftseesimulation_Grad1_Button gedrückt!")
+        time.sleep(2)
+
+    # 19. Zurück-Button drücken
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
+        time.sleep(2)
+
+    # 49. Zurück_Button drücken um zum Home zu kommen
+    if click_button(button_Zuruck):
+        print("✅ Zurück_Button gedrückt!")
         time.sleep(2)
