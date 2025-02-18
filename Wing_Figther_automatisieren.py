@@ -1070,6 +1070,23 @@ if sim_start > sim_dont_start:
         print("✅ Zurück_Button gedrückt!")
         time.sleep(2)
 
+    # StarCave_Voyage_Button drücken
+    if click_button(button_StarCave_Voyage):
+        print("✅ StarCave_Voyage_Button gedrückt!")
+        time.sleep(2)
+
+    # StarCave_Abholen_Button drücken
+    if click_button(button_StarCave_Abholen):
+        print("✅ StarCave_Abholen_Button gedrückt!")
+        time.sleep(2)
+        pyautogui.click()
+        time.sleep(2)
+
+    # Unico_Zurück_Button drücken
+    if click_button(button_Unico_Zuruck):
+        print("✅ Unico_Zurück_Button gedrückt!")
+        time.sleep(2)
+
     # 66. Unico_Event_Aufgaben_Button drücken
     if click_button(button_Unico_Event_Aufgaben):
         print("✅ Unico_Event_Aufgaben_Button gedrückt!")
@@ -2037,6 +2054,23 @@ else:
         print("✅ Zurück_Button gedrückt!")
         time.sleep(2)
 
+    # StarCave_Voyage_Button drücken
+    if click_button(button_StarCave_Voyage):
+        print("✅ StarCave_Voyage_Button gedrückt!")
+        time.sleep(2)
+
+    # StarCave_Abholen_Button drücken
+    if click_button(button_StarCave_Abholen):
+        print("✅ StarCave_Abholen_Button gedrückt!")
+        time.sleep(2)
+        pyautogui.click()
+        time.sleep(2)
+
+    # Unico_Zurück_Button drücken
+    if click_button(button_Unico_Zuruck):
+        print("✅ Unico_Zurück_Button gedrückt!")
+        time.sleep(2)
+        
     # 66. Unico_Event_Aufgaben_Button drücken
     if click_button(button_Unico_Event_Aufgaben):
         print("✅ Unico_Event_Aufgaben_Button gedrückt!")
